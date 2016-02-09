@@ -1,68 +1,57 @@
-Symfony Standard Edition
+Save.ga Website
 ========================
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+This is Open Source repository of Save.ga Project
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
-
-What's inside?
+What's Save.ga?
 --------------
 
-The Symfony Standard Edition is configured with the following defaults:
+This is a simple social bookmarking service for IT crowd:
 
-  * An AppBundle you can use to start coding;
+  * Saving and exploring interesting and useful URLs;
 
-  * Twig as the only configured template engine;
+  * Full text search and search by tags, grouping bookmarks by lists;
 
-  * Doctrine ORM/DBAL;
+  * Automaticly adding meta information while saving URL (Title, Description, Author etc.);
 
-  * Swiftmailer;
+  * Easy to login with social accounts, easy to save bookmarks with API or Buttons;
 
-  * Annotations enabled for everything.
+  * Easy to find useful and qualified library or tutorial with help of ratings.
 
-It comes pre-configured with the following bundles:
+## Roadmap of the project:
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+  * Basic layout's for pages: Homepage, Save URL, Search page, Tags page, Sign In, Bookmark Page
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+  * Sign in with social accounts (Google, GitHub, Facebook, etc)
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+  * Personal page + personal settings
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+  * Save bookmark with basic functionality
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+  * URL Parsing while saving bookmark
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+  * Full text search for bookmarks (Probably using Sphinx search engine)
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+  * Search bookmarks by tags
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
+  * Personal lists of bookmarks
 
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
+  * Simple API for adding bookmarks + Example & Library for using API
 
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
+  * Standalone JavaScript for using on other sites to save page with Save.ga
 
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
+  * Search for similar bookmarks while adding URL
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
+  * Similar bookmarks on bookmark's page
 
-Enjoy!
+  * Popular tags, and tags popular with selected tag (i.e. PHP + Framework)
 
-[1]:  https://symfony.com/doc/3.0/book/installation.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.0/book/doctrine.html
-[8]:  https://symfony.com/doc/3.0/book/templating.html
-[9]:  https://symfony.com/doc/3.0/book/security.html
-[10]: https://symfony.com/doc/3.0/cookbook/email.html
-[11]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
-[13]: https://symfony.com/doc/3.0/bundles/SensioGeneratorBundle/index.html
+  * Rating system for bookmarks
+
+  * Administration panel for moderators (Moderate bookmarks, tags & users)
+
+  * Spam report function for bookmark
+
+
+Here's live coding stream of developing this project:
+[https://livecoding.tv/jakulov/](https://livecoding.tv/jakulov/)

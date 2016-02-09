@@ -19,6 +19,6 @@ class DefaultController extends Controller
             return $this->render('SiteBundle:Site:coming.html.twig');
         }
 
-        return $this->render('SiteBundle:Site:site.html.twig');
+        return $this->render('SiteBundle:Site:page/index.html.twig');
     }
 }

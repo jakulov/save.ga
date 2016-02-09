@@ -1,3 +1,23 @@
 site_homepage:
     path:     /
     defaults: { _controller: SiteBundle:Default:index }
+
+site_save:
+    path:     /save
+    defaults: { _controller: SiteBundle:Save:index }
+
+site_search:
+    path:     /search
+    defaults: { _controller: SiteBundle:Search:index }
+
+site_tags:
+    path:     /tags
+    defaults: { _controller: SiteBundle:Search:tags }
+
+site_sign_in:
+    path:     /sign/in
+    defaults: { _controller: SiteBundle:Sign:in }
+
+site_sign_out:
+    path:     /sign/out
+    defaults: { _controller: SiteBundle:Sign:out }

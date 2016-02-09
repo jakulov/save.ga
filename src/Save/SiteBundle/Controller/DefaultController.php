@@ -15,6 +15,10 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
+        if($this->getParameter('coming_soon')) {
+            return $this->render('SiteBundle:Site:coming.html.twig');
+        }
+
         return $this->render('SiteBundle:Site:site.html.twig');
     }
 }

@@ -2,3 +2,21 @@ services:
 #    site.example:
 #        class: Save\SiteBundle\Example
 #        arguments: ["@service_id", "plain_value", %parameter%]
+
+    site.helper.abstract_entity_helper:
+        class: Save\SiteBundle\Helper\AbstractEntityHelper
+        abstract: true
+        calls:
+            - [setEntityManager, ['@doctrine.orm.default_entity_manager']]
+
+    site.helper.bookmark:
+        class: Save\SiteBundle\Helper\BookmarkHelper
+        parent: site.helper.abstract_entity_helper
+        tags:
+            - { name: twig.extension }
+
+    site.helper.tag:
+        class: Save\SiteBundle\Helper\TagHelper
+        parent: site.helper.abstract_entity_helper
+        tags:
+            - { name: twig.extension }
